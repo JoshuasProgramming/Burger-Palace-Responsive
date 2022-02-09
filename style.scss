@@ -1,0 +1,245 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* Reset page in SCSS */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Setting the font-family to 'bangers' for every text element*/
+body{
+    font-size: 100%;
+    font-family: 'Bangers', cursive;
+}
+
+h2{
+    color:rgb(255, 255, 255);
+    font-size: 120px;
+    font-family: 'Bangers', cursive;
+    margin:0px 30px;
+    text-shadow: 10px 10px rgb(0, 0, 0);
+}
+
+.top-2{
+    background-image: url(image2.jpg);
+    background-size:cover;
+    min-height: 50%;
+    width:100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .top-2-text{
+        max-width:600%;
+        width: calc(100% - 40px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+
+    .home-header{
+        color:rgb(255, 255, 255);
+        font-size: 13vw;
+        font-family: 'Bangers', cursive;
+        text-shadow: 10px 10px rgb(0, 0, 0);
+    }
+
+    .let-me{
+        color:white;
+        text-decoration: none;
+    }&:hover{
+        cursor: pointer;
+        opacity:100%;
+    }&:active{
+        box-shadow: 1px 1px 11px black;
+    }
+}
+
+button{
+    color:whitesmoke; /* Color of the text*/
+    font-size: 45px; /* Setting the font size of the text */
+    font-family: 'Bangers', cursive;
+    background:black;
+    padding:15px;
+    border: 0px solid white;
+    opacity: 85%;
+    border-radius: 30px;
+    text-decoration: none;
+
+    &:hover{
+        cursor: pointer;
+        opacity:100%;
+    }
+    &:active{
+        box-shadow: 1px 1px 11px black;
+    }
+}
+
+
+.top{
+    display: flex;
+    align-items: center;
+    height:50px;
+    width:100%;
+    background-color: black;
+    color:whitesmoke;
+    box-shadow: 1px 1px 11px black;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:auto auto;
+        max-width:1028px;
+        width: calc(100% - 30px);
+        height: 100%;
+
+        p{
+            font-family: 'Bangers', cursive;
+            font-size:35px;
+
+            .landing-direct{
+                text-decoration:none;
+                color:white;
+                
+            }
+
+            .landing-direct:hover{
+                border-bottom:3px solid white;
+                cursor:pointer;
+            }
+    
+        }
+
+        .navbar{
+            display: flex;
+            height:30px;
+            
+            li{
+                list-style: none;
+                margin:0px 5px;
+                a{
+                    text-decoration: none;
+                    font-size: 25px;
+                    color: whitesmoke;
+                } &:hover{
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+
+        .ham{
+            height: calc(100% - 5px);
+            display: none;
+
+        }
+
+        @media screen and (max-width: 600px) {
+            .ham{
+                display:inline-block;
+                background: whitesmoke;
+            }
+
+            .navbar{
+                display:none;
+                background: red;
+            }
+        }
+    }
+}
+
+
+.popup{
+    position:fixed;
+    background: rgba(196, 195, 195, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:999;
+    transition-duration: 1s;
+    transition-property: transform;
+
+    .ham-ul{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: transform 1s ease-in;
+        transform: translate(-6000px, 0px);
+
+        .close-popup{
+            color:red;
+        }
+
+        // transform: translate(-600px,0px);
+    }
+
+    li{
+        list-style: none;
+        margin:10px;
+        a{
+            text-decoration: none;
+            font-size: 60px;
+            color: black;
+        } &:hover{
+            border-bottom: 9px solid orange;
+        }
+    }
+}
+
+.disabled{
+    display: none;
+    background: black;
+}
+
+/*About Section BELOW*/
+.about-div{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    .about-section{
+        // background: red;
+        background:rgb(255, 255, 113);
+        //height:727px;
+        height:auto;
+
+        .about-text{
+            color:rgb(0, 0, 0);
+            font-size: 35px;
+            font-family: 'Bangers', cursive;
+            margin:0px 30px;
+        }
+
+        .opening-times-text{
+            color:black;
+            font-size: 40px;
+            font-family: 'Bangers', cursive;
+            text-shadow: 5px 5px rgb(255, 255, 255);
+        }
+    
+        .left-right-main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 1028px;
+            width: calc(100% - 50px);
+        }
+    }
+}
+
