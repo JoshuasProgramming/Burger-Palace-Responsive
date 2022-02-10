@@ -16,10 +16,11 @@ body{
 
 h2{
     color:rgb(255, 255, 255);
-    font-size: 120px;
+    // font-size: 120px;
+    font-size:20vw;
     font-family: 'Bangers', cursive;
     margin:0px 30px;
-    text-shadow: 10px 10px rgb(0, 0, 0);
+    text-shadow: 8px 8px rgb(0, 0, 0);
 }
 
 .top-2{
@@ -213,41 +214,71 @@ button{
 }
 
 /*About Section BELOW*/
-.about-div{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
 
-    .about-section{
-        // background: red;
-        background:rgb(255, 255, 113);
-        //height:727px;
-        height:auto;
+.about-section{
+    // background: red;
+    background:rgb(255, 255, 113);
+    //height:727px;
+    height:auto;
 
-        .about-text{
-            color:rgb(0, 0, 0);
-            font-size: 35px;
-            font-family: 'Bangers', cursive;
-            margin:0px 30px;
-        }
+    .about-text{
+        color:rgb(0, 0, 0);
+        font-size: 10vw;
+        font-family: 'Bangers', cursive;
+        // margin:10px 300px;
+    }
 
-        .opening-times-text{
-            color:black;
-            font-size: 40px;
-            font-family: 'Bangers', cursive;
-            text-shadow: 5px 5px rgb(255, 255, 255);
-        }
-    
-        .left-right-main{
+    .opening-times-text{
+        color:black;
+        // font-size: 40px;
+        font-size: 10vw;
+        font-family: 'Bangers', cursive;
+        text-shadow: 5px 5px rgb(255, 255, 255);
+        margin:10px 100px;
+    }
+
+    .left-right-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height:100%;
+        max-width: 1028px;
+        width: calc(100% - 50px);
+        margin:0px auto;
+
+        .right{
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            max-width: 1028px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left{
+            position: static;
+            overflow: visible;
+        }
+
+        .google-api{
+            max-width: 500px;
+            height:300px;
             width: calc(100% - 50px);
+            position: static;
+            overflow: visible;
+            // max-width: 200px;
+            // height: 200px;
+            color:black;
+            // font-size: 50px;
+            // font-family: "Amatic SC", sans-serif;
+            // margin:auto auto;
+            text-shadow:5px 5px white;
+            border-radius: 15px;
+            box-shadow: 1px 1px 19px black;
+            margin:70px 100px;
         }
     }
 }
+
 
 
 
@@ -270,6 +301,7 @@ button{
         justify-content: space-around;
         align-items:center;
         flex-direction: column;
+        padding: 5px;
         max-width:600px;
         width:calc(100% - 30px);
         min-height:400px;

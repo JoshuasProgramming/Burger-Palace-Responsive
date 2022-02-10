@@ -16,10 +16,10 @@ body {
 
 h2 {
   color: white;
-  font-size: 120px;
+  font-size: 20vw;
   font-family: 'Bangers', cursive;
   margin: 0px 30px;
-  text-shadow: 10px 10px black;
+  text-shadow: 8px 8px black;
 }
 
 .top-2 {
@@ -274,26 +274,26 @@ button:active {
 }
 
 /*About Section BELOW*/
-.about-div .about-section {
+.about-section {
   background: #ffff71;
   height: auto;
 }
 
-.about-div .about-section .about-text {
+.about-section .about-text {
   color: black;
-  font-size: 35px;
+  font-size: 10vw;
   font-family: 'Bangers', cursive;
-  margin: 0px 30px;
 }
 
-.about-div .about-section .opening-times-text {
+.about-section .opening-times-text {
   color: black;
-  font-size: 40px;
+  font-size: 10vw;
   font-family: 'Bangers', cursive;
   text-shadow: 5px 5px white;
+  margin: 10px 100px;
 }
 
-.about-div .about-section .left-right-main {
+.about-section .left-right-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,8 +307,45 @@ button:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   max-width: 1028px;
   width: calc(100% - 50px);
+  margin: 0px auto;
+}
+
+.about-section .left-right-main .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-section .left-right-main .left {
+  position: static;
+  overflow: visible;
+}
+
+.about-section .left-right-main .google-api {
+  max-width: 500px;
+  height: 300px;
+  width: calc(100% - 50px);
+  position: static;
+  overflow: visible;
+  color: black;
+  text-shadow: 5px 5px white;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 19px black;
+          box-shadow: 1px 1px 19px black;
+  margin: 70px 100px;
 }
 
 .login-form-container {
@@ -339,6 +376,7 @@ button:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 5px;
   max-width: 600px;
   width: calc(100% - 30px);
   min-height: 400px;
