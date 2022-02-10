@@ -25,7 +25,7 @@ h2 {
 .top-2 {
   background-image: url(image2.jpg);
   background-size: cover;
-  min-height: 50%;
+  min-height: 90%;
   width: 100%;
   float: left;
   height: 100vh;
@@ -61,7 +61,24 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  white-space: nowrap;
+}
+
+.top-2 .top-2-text .home-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px auto;
+  gap: 5px;
 }
 
 .top-2 .home-header {
@@ -188,7 +205,6 @@ button:active {
 @media screen and (max-width: 600px) {
   .top header .ham {
     display: inline-block;
-    background: whitesmoke;
     -webkit-box-shadow: 1px 1px 11px black;
             box-shadow: 1px 1px 11px black;
   }
