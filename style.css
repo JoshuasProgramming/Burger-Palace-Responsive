@@ -281,13 +281,13 @@ button:active {
 
 .about-section .about-text {
   color: black;
-  font-size: 9vw;
+  font-size: 4vw;
   font-family: 'Bangers', cursive;
 }
 
 .about-section .opening-times-text {
   color: black;
-  font-size: 8vw;
+  font-size: 5vw;
   font-family: 'Bangers', cursive;
   text-shadow: 5px 5px white;
   margin: 10px 100px;
@@ -327,6 +327,7 @@ button:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .about-section .left-right-main .left {
@@ -360,7 +361,8 @@ button:active {
           align-items: center;
   max-width: 500px;
   width: calc(100% - 50px);
-  min-height: 150px;
+  min-height: 100px;
+  margin: 25px 0px;
 }
 
 .login-form-container .register-form {
@@ -376,12 +378,12 @@ button:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5px;
+  padding: 12px 15px;
   max-width: 600px;
   width: calc(100% - 20px);
   min-height: 350px;
   position: absolute;
-  margin: auto auto;
+  margin: 25px 0px;
   -webkit-box-shadow: 1px 1px 11px black;
           box-shadow: 1px 1px 11px black;
   border-radius: 25px;
@@ -433,9 +435,9 @@ button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -445,37 +447,53 @@ button:active {
           flex-direction: column;
 }
 
-.contact-section input {
-  max-width: 200px;
-  font-size: 40px;
+.contact-section textarea {
+  max-width: 500px;
+  height: 150px;
+  text-align: center;
+  font-size: 4vw;
   font-family: 'Bangers', cursive;
   outline: none;
+  margin: 10px auto;
   font-weight: bold;
   border-radius: 15px;
   border: 3px solid black;
 }
 
-.contact-section textarea {
-  max-width: 100px;
-  font-size: 40px;
+.contact-section input {
+  max-width: 500px;
+  height: 80px;
+  text-align: center;
+  font-size: 4vw;
   font-family: 'Bangers', cursive;
   outline: none;
-  margin: -50px auto;
+  margin: 10px auto;
   font-weight: bold;
   border-radius: 15px;
   border: 3px solid black;
 }
 
 .contact-section .btn-4 {
-  width: 200px;
-  font-size: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 25%;
+  width: calc(100% - 0px);
+  min-height: 50px;
+  font-size: 7vw;
   color: white;
+  border-radius: 15px;
   text-decoration: none;
-  width: 300px;
   background: black;
   text-align: center;
   opacity: 90%;
-  margin: 30px auto;
+  margin: 70px auto;
 }
 
 .contact-section .btn-4:hover {
@@ -488,6 +506,22 @@ button:active {
           box-shadow: 1px 1px 11px black;
 }
 
+.contact-section .contact-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .contact-section .contact-header {
   color: black;
   font-size: 8vw;
@@ -495,9 +529,42 @@ button:active {
   text-shadow: 5px 5px white;
 }
 
-.contact-section .contact-header .contact-form {
+/*Food Menu */
+.menu-section {
+  background: black;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  text-align: center;
+}
+
+.menu-section .food-image1 {
+  background-image: url(food-image1.jpg);
+  background-size: cover;
+  max-width: 1000px;
+  min-height: 100%;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+.menu-section .food-image2 {
+  background-image: url(food-image2.jpg);
+  background-size: cover;
+  max-width: 1000px;
+  min-height: 100%;
+  border-radius: 15px;
+  border: 3px solid black;
 }
 /*# sourceMappingURL=style.css.map */

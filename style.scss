@@ -223,15 +223,16 @@ button{
 
     .about-text{
         color:rgb(0, 0, 0);
-        font-size: 9vw;
+        font-size: 4vw;
         font-family: 'Bangers', cursive;
+
         // margin:10px 300px;
     }
 
     .opening-times-text{
         color:black;
         // font-size: 40px;
-        font-size: 8vw;
+        font-size: 5vw;
         font-family: 'Bangers', cursive;
         text-shadow: 5px 5px rgb(255, 255, 255);
         margin:10px 100px;
@@ -252,6 +253,7 @@ button{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align:center;
         }
 
         .left{
@@ -288,25 +290,25 @@ button{
     align-items: center;
     max-width:500px;
     width:calc(100% - 50px);
-    min-height:150px;
+    min-height:100px;
     // background: snow;
     // border-radius:25px;
     // box-shadow: 1px 1px 11px black;
-    // margin: auto auto;
+    margin: 25px 0px;
     // top:50%;
-    // padding:20px;
+    //padding:20px;
 
     .register-form{
         display: flex;
         justify-content: space-around;
         align-items:center;
         flex-direction: column;
-        padding: 5px;
+        padding: 12px 15px;
         max-width:600px;
         width:calc(100% - 20px);
         min-height:350px;
         position: absolute;
-        margin: auto auto;
+        margin: 25px 0px;
         box-shadow: 1px 1px 11px black;
         border-radius: 25px;
         background: black;
@@ -369,31 +371,32 @@ button{
 .contact-section{
     background-color:rgb(255, 255, 113);
     height:auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
     flex-direction: column;
 
-    input{
-        max-width:200px;
-        // height:80px;
-        // text-align: center;
-        font-size: 40px;
+    textarea{
+        max-width:500px;
+        height:150px;
+        text-align: center;
+        font-size: 4vw;
         font-family: 'Bangers', cursive;
         outline: none;
-        // margin: 10px auto;
+        margin: 10px auto;
         font-weight:bold;
         border-radius: 15px;
         border: 3px solid black;
     }
-    textarea{
-        max-width:100px;
-        // height:80px;
-        // text-align: center;
-        font-size: 40px;
+
+    input{
+        max-width:500px;
+        height:80px;
+        text-align: center;
+        font-size: 4vw;
         font-family: 'Bangers', cursive;
         outline: none;
-        margin: -50px auto;
+        margin: 10px auto;
         font-weight:bold;
         border-radius: 15px;
         border: 3px solid black;
@@ -401,15 +404,20 @@ button{
 
 
     .btn-4{
-        width:200px;
-        font-size:100px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        max-width:25%;
+        width:calc(100% - 0px);
+        min-height:50px;
+        font-size:7vw;
         color: white;
+        border-radius: 15px;
         text-decoration: none;
-        width:300px;
         background:black;
         text-align: center;
         opacity: 90%;
-        margin:30px auto;  
+        margin:70px auto;  
     }
     
     .btn-4:hover{
@@ -421,6 +429,14 @@ button{
         box-shadow: 1px 1px 11px black;
     }
 
+    .contact-form-container{
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
 
     .contact-header{
         color:black;
@@ -429,7 +445,7 @@ button{
         text-shadow:5px 5px white;
 
         .contact-form{
-            display: flex;
+            
             // display: flex;
             // justify-content: center;
             // align-items:center;
@@ -451,3 +467,61 @@ button{
 
     
 }
+
+/*Food Menu */
+.menu-section{
+    background: black;
+    height: auto;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    flex-direction: row;
+    color:white;
+    text-align: center;
+
+    .food-image1{
+        background-image: url(food-image1.jpg);
+        background-size:cover;
+        max-width:1000px;
+        min-height:100%;
+        border-radius: 15px;
+        border: 3px solid black;
+        
+    }
+
+    .food-image2{
+        background-image: url(food-image2.jpg);
+        background-size:cover;
+        max-width:1000px;
+        min-height:100%;
+        border-radius: 15px;
+        border: 3px solid black;
+    }
+}
+
+// /*Food Menu*/
+
+// .menu-section{
+//     background-color:rgb(255, 255, 113);
+//     .food-container{
+
+//         .food-image1{
+//             background-image: url(food-image1.jpg);
+//             background-size:cover;
+//             max-width:300px;
+//             height:200px;
+//             margin:20px auto;
+            
+//             // min-height: 50%;
+//             // width:45%;
+//             // // float: left;
+//             // height: 100%;
+//             // position: inherit;
+
+//         }
+
+//         .food-image2{
+
+//         }
+//     }
+// }
