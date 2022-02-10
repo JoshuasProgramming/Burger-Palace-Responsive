@@ -93,6 +93,8 @@ button{
     background-color: black;
     color:whitesmoke;
     box-shadow: 1px 1px 11px black;
+    position: fixed;
+    z-index:999;
 
     header{
         display: flex;
@@ -147,6 +149,10 @@ button{
             .ham{
                 display:inline-block;
                 background: whitesmoke;
+                box-shadow: 1px 1px 11px black;
+            } &:hover{
+                cursor: pointer;
+
             }
 
             .navbar{
@@ -243,3 +249,85 @@ button{
     }
 }
 
+
+
+.login-form-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width:575px;
+    width:calc(100% - 30px);
+    min-height:200px;
+    // background: snow;
+    // border-radius:25px;
+    // box-shadow: 1px 1px 11px black;
+    // margin: auto auto;
+    // top:50%;
+    // padding:20px;
+
+    .register-form{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        flex-direction: column;
+        max-width:600px;
+        width:calc(100% - 30px);
+        min-height:400px;
+        position: absolute;
+        margin: auto auto;
+        box-shadow: 1px 1px 11px black;
+        border-radius: 25px;
+        background: black;
+        background:linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    }
+
+    .register-name, .register-email, .register-password{
+        max-width:600px;
+        width:calc(100% - 50px);
+        min-height:90px;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Bangers', cursive;
+        outline: none;
+        font-weight:bold;
+        border-radius: 15px;
+        border: 3px solid black;
+    }
+
+    .register-btn{
+        max-width:600px;
+        width:calc(100% - 10px);
+        min-height:50px;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Bangers', cursive;
+        background:rgb(255, 255, 86);
+        color:black;
+        opacity: 80%;
+        border-radius: 30px;
+        // position: absolute;
+        // top:85%;
+        // left: 51%;
+        // transform: translate(-50%, -50%);
+        // color:black;
+        // font-size: 30px;
+        // font-family: 'Bangers', cursive;
+        // background:rgb(255, 255, 86);
+        // padding:15px;
+        // border: 0px solid white;
+        // opacity: 80%;
+        // border-radius: 30px;
+        // width:400px;
+        // height:50px;
+    }
+    
+    .register-btn:hover{
+        opacity: 100%;
+        cursor: pointer;
+    }
+    
+    .register-btn:active{
+        box-shadow: 1px 1px 16px white;
+    }
+
+}
