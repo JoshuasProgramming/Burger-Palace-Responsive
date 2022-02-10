@@ -281,13 +281,13 @@ button:active {
 
 .about-section .about-text {
   color: black;
-  font-size: 10vw;
+  font-size: 9vw;
   font-family: 'Bangers', cursive;
 }
 
 .about-section .opening-times-text {
   color: black;
-  font-size: 10vw;
+  font-size: 8vw;
   font-family: 'Bangers', cursive;
   text-shadow: 5px 5px white;
   margin: 10px 100px;
@@ -335,7 +335,7 @@ button:active {
 }
 
 .about-section .left-right-main .google-api {
-  max-width: 500px;
+  max-width: 700px;
   height: 300px;
   width: calc(100% - 50px);
   position: static;
@@ -345,7 +345,7 @@ button:active {
   border-radius: 15px;
   -webkit-box-shadow: 1px 1px 19px black;
           box-shadow: 1px 1px 19px black;
-  margin: 70px 100px;
+  margin: 45px 100px;
 }
 
 .login-form-container {
@@ -358,9 +358,9 @@ button:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 575px;
-  width: calc(100% - 30px);
-  min-height: 200px;
+  max-width: 500px;
+  width: calc(100% - 50px);
+  min-height: 150px;
 }
 
 .login-form-container .register-form {
@@ -378,8 +378,8 @@ button:active {
           flex-direction: column;
   padding: 5px;
   max-width: 600px;
-  width: calc(100% - 30px);
-  min-height: 400px;
+  width: calc(100% - 20px);
+  min-height: 350px;
   position: absolute;
   margin: auto auto;
   -webkit-box-shadow: 1px 1px 11px black;
@@ -393,7 +393,7 @@ button:active {
 .login-form-container .register-name, .login-form-container .register-email, .login-form-container .register-password {
   max-width: 600px;
   width: calc(100% - 50px);
-  min-height: 90px;
+  min-height: 70px;
   text-align: center;
   font-size: 25px;
   font-family: 'Bangers', cursive;
@@ -424,5 +424,80 @@ button:active {
 .login-form-container .register-btn:active {
   -webkit-box-shadow: 1px 1px 16px white;
           box-shadow: 1px 1px 16px white;
+}
+
+/* Contact Form BELOW*/
+.contact-section {
+  background-color: #ffff71;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-section input {
+  max-width: 200px;
+  font-size: 40px;
+  font-family: 'Bangers', cursive;
+  outline: none;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+.contact-section textarea {
+  max-width: 100px;
+  font-size: 40px;
+  font-family: 'Bangers', cursive;
+  outline: none;
+  margin: -50px auto;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+.contact-section .btn-4 {
+  width: 200px;
+  font-size: 100px;
+  color: white;
+  text-decoration: none;
+  width: 300px;
+  background: black;
+  text-align: center;
+  opacity: 90%;
+  margin: 30px auto;
+}
+
+.contact-section .btn-4:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.contact-section .btn-4:active {
+  -webkit-box-shadow: 1px 1px 11px black;
+          box-shadow: 1px 1px 11px black;
+}
+
+.contact-section .contact-header {
+  color: black;
+  font-size: 8vw;
+  font-family: 'Bangers', cursive;
+  text-shadow: 5px 5px white;
+}
+
+.contact-section .contact-header .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

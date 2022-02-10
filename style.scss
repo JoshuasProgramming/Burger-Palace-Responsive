@@ -223,7 +223,7 @@ button{
 
     .about-text{
         color:rgb(0, 0, 0);
-        font-size: 10vw;
+        font-size: 9vw;
         font-family: 'Bangers', cursive;
         // margin:10px 300px;
     }
@@ -231,7 +231,7 @@ button{
     .opening-times-text{
         color:black;
         // font-size: 40px;
-        font-size: 10vw;
+        font-size: 8vw;
         font-family: 'Bangers', cursive;
         text-shadow: 5px 5px rgb(255, 255, 255);
         margin:10px 100px;
@@ -260,7 +260,7 @@ button{
         }
 
         .google-api{
-            max-width: 500px;
+            max-width: 700px;
             height:300px;
             width: calc(100% - 50px);
             position: static;
@@ -274,7 +274,7 @@ button{
             text-shadow:5px 5px white;
             border-radius: 15px;
             box-shadow: 1px 1px 19px black;
-            margin:70px 100px;
+            margin:45px 100px;
         }
     }
 }
@@ -286,9 +286,9 @@ button{
     display:flex;
     justify-content: center;
     align-items: center;
-    max-width:575px;
-    width:calc(100% - 30px);
-    min-height:200px;
+    max-width:500px;
+    width:calc(100% - 50px);
+    min-height:150px;
     // background: snow;
     // border-radius:25px;
     // box-shadow: 1px 1px 11px black;
@@ -303,8 +303,8 @@ button{
         flex-direction: column;
         padding: 5px;
         max-width:600px;
-        width:calc(100% - 30px);
-        min-height:400px;
+        width:calc(100% - 20px);
+        min-height:350px;
         position: absolute;
         margin: auto auto;
         box-shadow: 1px 1px 11px black;
@@ -316,7 +316,7 @@ button{
     .register-name, .register-email, .register-password{
         max-width:600px;
         width:calc(100% - 50px);
-        min-height:90px;
+        min-height:70px;
         text-align: center;
         font-size: 25px;
         font-family: 'Bangers', cursive;
@@ -362,4 +362,92 @@ button{
         box-shadow: 1px 1px 16px white;
     }
 
+}
+
+
+/* Contact Form BELOW*/
+.contact-section{
+    background-color:rgb(255, 255, 113);
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+
+    input{
+        max-width:200px;
+        // height:80px;
+        // text-align: center;
+        font-size: 40px;
+        font-family: 'Bangers', cursive;
+        outline: none;
+        // margin: 10px auto;
+        font-weight:bold;
+        border-radius: 15px;
+        border: 3px solid black;
+    }
+    textarea{
+        max-width:100px;
+        // height:80px;
+        // text-align: center;
+        font-size: 40px;
+        font-family: 'Bangers', cursive;
+        outline: none;
+        margin: -50px auto;
+        font-weight:bold;
+        border-radius: 15px;
+        border: 3px solid black;
+    }
+
+
+    .btn-4{
+        width:200px;
+        font-size:100px;
+        color: white;
+        text-decoration: none;
+        width:300px;
+        background:black;
+        text-align: center;
+        opacity: 90%;
+        margin:30px auto;  
+    }
+    
+    .btn-4:hover{
+        opacity:100%;
+        cursor: pointer;
+    }
+    
+    .btn-4:active{
+        box-shadow: 1px 1px 11px black;
+    }
+
+
+    .contact-header{
+        color:black;
+        font-size: 8vw;
+        font-family: 'Bangers', cursive;
+        text-shadow:5px 5px white;
+
+        .contact-form{
+            display: flex;
+            // display: flex;
+            // justify-content: center;
+            // align-items:center;
+            // flex-direction: column;
+            // padding: 5px;
+            // max-width:600px;
+            // width:calc(100% - 20px);
+            // min-height:350px;
+            // position: absolute;
+            // margin: auto auto;
+            // color:black;
+            // font-size: 8vw;
+            // font-weight: bold;
+            // font-family: 'Bangers', cursive;
+            // // margin:0px auto;   
+        }
+    }
+
+
+    
 }
