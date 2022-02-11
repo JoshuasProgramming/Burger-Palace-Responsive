@@ -7,6 +7,13 @@ session_start();
 //include the database connection
 require_once 'includes/connection.php';
 
+//Checking if the user has a session. If they don't they'll be redirected
+//to the admin login page
+if (!isset($_SESSION['name'])) {
+    $_SESSION['msg'] = "You have to log in first";
+    header("Location:login.html");
+}
+
 $name = $_SESSION['name'];
 $email = $_SESSION['email'];
 

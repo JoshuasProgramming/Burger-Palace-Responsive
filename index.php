@@ -9,11 +9,11 @@
 
     //Checking if the user has a session. If they don't they'll be redirected
     //to the admin login page
-    if (!isset($_SESSION['username'])) {
+    if (!isset($_SESSION['name'])) {
     $_SESSION['msg'] = "You have to log in first";
-    header("Location:register.html");
+    header("Location:login.html");
 
-    $username = $_SESSION['username'];
+    $username = $_SESSION['name'];
 }
 ?>
 
@@ -61,8 +61,8 @@
         <div class="top-2-text">
             <h1 class="home-header">Welcome<br><center><?php echo $_SESSION['name']?></center></h1>
             <div class="home-options">
-                <button><a href="#About" class="let-me" id="">Update Account</a></button>
-                <button><a href="#About" class="let-me" id="">Update Profile</a></button>
+            <button><a href="update.php" class="let-me" id="">Update Account</a></button>
+                <!-- <button><a href="profile.php" class="let-me" id="">Update Profile</a></button> -->
                 <button class="let-me" id="delete_btn" onclick=run()>Delete Account</button>
             </div>
                 
@@ -147,7 +147,6 @@
         }
         
     </script>
-
 </body>
 </html>
 

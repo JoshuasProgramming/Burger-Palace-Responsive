@@ -4,6 +4,13 @@
 //session identifier passed via a GET or POST request, or passed via a cookie.
 session_start();
 
+//Checking if the user has a session. If they don't they'll be redirected
+//to the admin login page
+if (!isset($_SESSION['name'])) {
+    $_SESSION['msg'] = "You have to log in first";
+    header("Location:login.html");
+}
+
 //unregister a session variable using the unset method with the session user as a parameter
 unset($_SESSION["name"]);
 

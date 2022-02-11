@@ -54,6 +54,41 @@ h2{
             gap:5px;
         }
 
+        .profile-image-input-container{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap:5px;
+
+            .upload-file-input{
+                max-width:270px;
+                color:whitesmoke; /* Color of the text*/
+                font-size:20px ; /*25px Setting the font size of the text */
+                font-family: 'Bangers', cursive;
+                background:black;
+                padding:15px;
+                border: 0px solid white;
+                opacity: 85%;
+                border-radius: 30px;
+                text-decoration: none;
+            }
+    
+            .upload-file-submit{
+                color:whitesmoke; /* Color of the text*/
+                font-size: 25px; /* Setting the font size of the text */
+                font-family: 'Bangers', cursive;
+                background:black;
+                padding:15px;
+                border: 0px solid white;
+                opacity: 85%;
+                border-radius: 30px;
+                text-decoration: none;
+            }
+        }
+
+        
+
     }
 
     .home-header{
@@ -315,6 +350,23 @@ button{
         max-width:600px;
         width:calc(100% - 20px);
         min-height:350px;
+        position: absolute;
+        margin: 25px 0px;
+        box-shadow: 1px 1px 11px black;
+        border-radius: 25px;
+        background: black;
+        background:linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    }
+
+    .update-form{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        flex-direction: column;
+        padding: 12px 15px;
+        max-width:600px;
+        width:calc(100% - 20px);
+        min-height:450px;
         position: absolute;
         margin: 25px 0px;
         box-shadow: 1px 1px 11px black;

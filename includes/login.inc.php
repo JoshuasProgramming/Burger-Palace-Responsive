@@ -37,6 +37,7 @@
         if(isset($_SESSION["name"])){
             header("Location: ../index.php");
         } else {
+            header("Location: ../cantLogin.html");
             echo "Can't login". $name. "Refresh and try again";
         }
     }

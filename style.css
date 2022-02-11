@@ -81,6 +81,52 @@ h2 {
   gap: 5px;
 }
 
+.top-2 .top-2-text .profile-image-input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.top-2 .top-2-text .profile-image-input-container .upload-file-input {
+  max-width: 270px;
+  color: whitesmoke;
+  /* Color of the text*/
+  font-size: 20px;
+  /*25px Setting the font size of the text */
+  font-family: 'Bangers', cursive;
+  background: black;
+  padding: 15px;
+  border: 0px solid white;
+  opacity: 85%;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.top-2 .top-2-text .profile-image-input-container .upload-file-submit {
+  color: whitesmoke;
+  /* Color of the text*/
+  font-size: 25px;
+  /* Setting the font size of the text */
+  font-family: 'Bangers', cursive;
+  background: black;
+  padding: 15px;
+  border: 0px solid white;
+  opacity: 85%;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
 .top-2 .home-header {
   color: white;
   font-size: 13vw;
@@ -398,6 +444,33 @@ button:active {
   max-width: 600px;
   width: calc(100% - 20px);
   min-height: 350px;
+  position: absolute;
+  margin: 25px 0px;
+  -webkit-box-shadow: 1px 1px 11px black;
+          box-shadow: 1px 1px 11px black;
+  border-radius: 25px;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(0, 0, 0, 0.8)), color-stop(50%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+}
+
+.login-form-container .update-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px 15px;
+  max-width: 600px;
+  width: calc(100% - 20px);
+  min-height: 450px;
   position: absolute;
   margin: 25px 0px;
   -webkit-box-shadow: 1px 1px 11px black;
