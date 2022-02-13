@@ -168,6 +168,9 @@ h2 {
 .menu-button:hover {
   opacity: 100%;
   cursor: pointer;
+  letter-spacing: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 button {
@@ -723,6 +726,102 @@ button:active {
 }
 
 .food-contain .chicken-burger-container .chicken-burger-description .food-title-price {
+  font-family: 'Bangers', cursive;
+  font-size: 10vw;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 10px black;
+}
+
+.food-contain .beef-burger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(beefBurger.jpg);
+  background-size: cover;
+  min-height: 90%;
+  width: 100%;
+  float: left;
+  height: 100vh;
+  position: relative;
+}
+
+.food-contain .beef-burger-container .chicken-burger-description .food-title {
+  font-family: 'Bangers', cursive;
+  margin: 10px;
+  font-size: 16vw;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+  text-align: center;
+}
+
+.food-contain .beef-burger-container .chicken-burger-description .food-title-description {
+  font-family: 'Bangers', cursive;
+  font-size: 5vw;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 10px black;
+}
+
+.food-contain .beef-burger-container .chicken-burger-description .food-title-price {
+  font-family: 'Bangers', cursive;
+  font-size: 10vw;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 10px black;
+}
+
+.food-contain .fish-burger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(fishBurger.jpg);
+  background-size: cover;
+  min-height: 90%;
+  width: 100%;
+  float: left;
+  height: 100vh;
+  position: relative;
+}
+
+.food-contain .fish-burger-container .chicken-burger-description .food-title {
+  font-family: 'Bangers', cursive;
+  margin: 10px;
+  font-size: 16vw;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+  text-align: center;
+}
+
+.food-contain .fish-burger-container .chicken-burger-description .food-title-description {
+  font-family: 'Bangers', cursive;
+  font-size: 5vw;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 10px black;
+}
+
+.food-contain .fish-burger-container .chicken-burger-description .food-title-price {
   font-family: 'Bangers', cursive;
   font-size: 10vw;
   color: white;
