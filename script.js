@@ -3,7 +3,6 @@
 //Grabbing the hamburger image
 const hamburger_image = document.getElementById('hamburger_image');
 
-
 //Grabbing the popup section 
 const popup = document.getElementById('popup');
 
@@ -16,6 +15,7 @@ const close_popup = document.getElementById('close_popup');
 function enableMenu(){
     popup.classList = [];
     popup.classList.add("popup");
+    // ham_ul.style.margin = "0px 100px";
     ham_ul.style.transform = "translate(0px,0px)";
     ham_ul.style.left = "0";
 }
@@ -23,7 +23,7 @@ function enableMenu(){
 function disablemenu(){
     popup.classList = [];
     popup.classList.add("disabled");
-    
+    ham_ul.style.margin = "0px -600px";
 }
 
 //When the user presses the hamburger menu
@@ -34,7 +34,7 @@ hamburger_image.addEventListener("click",(e)=>{
     if(x === "disabled"){
         enableMenu();
     }
-})
+});
 
 close_popup.addEventListener("click", (e)=>{
     disablemenu();
@@ -88,7 +88,7 @@ const submit = document.getElementById('submit').addEventListener("click", (e)=>
  * Function to create the Google Map
  */
 
- function myMap(){
+function myMap(){
     //Map options
     let options = {
         zoom:15,
