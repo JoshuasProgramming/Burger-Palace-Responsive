@@ -846,13 +846,70 @@ button{
             }
         }
     }
-
+    //Onion Rings
     .Onion-Rings-container{
         display:flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         background-image: url(onionRings.jpg);
+        background-size:cover;
+        min-height: 90%;
+        width:100%;
+        float: left;
+        height: 100vh;
+        position: relative;
+        // background-size:100%;
+        // background-position: center top;
+        // background-repeat: no-repeat;
+        // max-width:100%;
+        // // min-height:190vh;
+        // max-height: 100%;
+        
+        
+        .chicken-burger-description{
+            // display: flex;
+            // align-items: center;
+            // justify-content:center;
+            // flex-direction: column;
+    
+            .food-title{
+                font-family: 'Bangers', cursive;
+                // font-size:45px;
+                margin:10px;
+                font-size:16vw;
+                color:white;
+                text-shadow: 1px 1px 10px black;
+                text-align: center;
+            }
+
+            .food-title-description{
+                font-family: 'Bangers', cursive;
+                // font-size:45px;
+                font-size:5vw;
+                color:white;
+                text-align: center;
+                text-shadow: 1px 1px 10px black;
+            }
+
+            .food-title-price{
+                font-family: 'Bangers', cursive;
+                // font-size:45px;
+                font-size:10vw;
+                color:white;
+                text-align: center;
+                text-shadow: 1px 1px 10px black;
+                
+            }
+        }
+    }
+    //coleslaw
+    .coleslaw-container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(coleslaw.jpg);
         background-size:cover;
         min-height: 90%;
         width:100%;
